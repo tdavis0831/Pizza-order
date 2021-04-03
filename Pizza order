@@ -1,0 +1,19 @@
+size=input("What size pizza do you want? S M or L")
+add_pep=input("Do you want pepperoni? Yes or No")
+x_cheese=input("Do you want extra cheese? yes or no")
+bill=0
+if size=="S":
+  bill+=15
+elif size=="M":
+  bill+=20
+else:
+  bill+=25
+if add_pep == "Y":
+  if size=="S":
+    bill+=2
+  else:
+    bill+=3.00
+if x_cheese=="Y":
+  bill+=1 
+
+print(f"your final bill is #{bill}")
